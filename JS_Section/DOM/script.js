@@ -39,3 +39,16 @@ moviesList.forEach(function(movie){
   result += " star(s)";
   console.log(result);
 })
+
+
+var btnClick = document.querySelector("button");
+btnClick.addEventListener('click', changeBackground);
+
+function changeBackground(){
+    if(document.bgColor === "white"){
+        document.bgColor = "yellow";
+    }
+    else{
+        document.bgColor = "white";
+    }
+}
